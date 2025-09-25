@@ -44,6 +44,18 @@ section h1 {
 section p {
   font-size: 12px;
 }
+.image{
+    width: 500px;
+    height: 500px;
+    background-color: crimson;
+}
+.image img{
+    width: 100%;
+}
+.maini{
+    display: flex;
+    justify-content: space-between;
+}
 @media (max-width: 768px) {
   header {
     width: 100%;
@@ -56,15 +68,13 @@ section p {
     padding: 20px 15px;
 
   }
-}
-@media (max-width: 518px) {
-  header {
-    width: 100%;
-    font-size: 10px;
-    padding: 10px;
-    
+  .maini{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 }
+
 @media (max-width: 586px) {
   .menu ul{
     width: 100%;
@@ -85,4 +95,29 @@ section p {
   
   }
 
+
+}
+@media (max-width: 530px){
+  .image{
+    width: 450px;
+    height: 450px;
+    
+  }
+}
+
+@media (max-width: 430px){
+  .image{
+    width: 300px;
+    height: 300px;
+    
+  }
+}
+
+@media (max-width: 518px) {
+  header {
+    width: 100%;
+    font-size: 10px;
+    padding: 10px;
+    
+  }
 }
